@@ -40,7 +40,7 @@ export default function App() {
               className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
             />
             <span className="text-2xl sm:text-3xl font-black text-emerald-800 tracking-tight">
-              سراج
+              نظام سراج للمحاسبة
             </span>
           </div>
 

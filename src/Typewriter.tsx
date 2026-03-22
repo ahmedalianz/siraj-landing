@@ -19,7 +19,8 @@ export default function Typewriter({
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    // Use number instead of NodeJS.Timeout — safe & clean
+    let timer: number | undefined;
 
     const currentWord = words[currentWordIndex];
 
@@ -34,17 +35,21 @@ export default function Typewriter({
         setCurrentText(currentWord.slice(0, currentText.length - 1));
       }, deletingSpeed);
     } else if (!isDeleting && currentText === currentWord) {
-      // Pause at full word
+      // Pause → start deleting after delay
       timer = setTimeout(() => {
         setIsDeleting(true);
       }, pauseDelay);
     } else if (isDeleting && currentText === "") {
-      // Move to next word after deletion
-      setIsDeleting(false);
-      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      // After deletion finished → move to next word (async with 0 delay)
+      timer = setTimeout(() => {
+        setIsDeleting(false);
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      }, 0); // 0 delay is enough to avoid sync setState warning
     }
 
-    return () => clearTimeout(timer);
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
   }, [
     currentText,
     isDeleting,

@@ -134,7 +134,7 @@ export default function App() {
                 <div className="flex flex-wrap gap-4 font-headline font-bold text-lg text-on-surface">
                   <span>01289352555</span>
                   <span className="text-outline-variant opacity-30">|</span>
-                  <span>01018297040</span>
+                  <span>01102876777</span>
                 </div>
               </div>
             </div>

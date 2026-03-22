@@ -114,7 +114,7 @@ export default function App() {
                   اتصل الآن
                 </a>
                 <a
-                  href="https://wa.me/01289352555"
+                  href="https://wa.me/201289352555?text=مرحبا%2C%20أريد%20معرفة%20تفاصيل%20نظام%20سراج"
                   className="bg-white text-primary border border-outline-variant/30 px-8 py-4 sm:px-10 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:bg-surface-container-low transition-colors active:scale-95 flex items-center gap-3"
                 >
                   <span
@@ -502,7 +502,7 @@ export default function App() {
                   </a>
 
                   <a
-                    href="https://wa.me/01289352555"
+                    href="https://wa.me/201289352555?text=مرحبا%2C%20أريد%20معرفة%20تفاصيل%20نظام%20سراج"
                     className="bg-emerald-900/30 backdrop-blur-md border border-white/30 text-white px-8 py-4 sm:px-10 sm:py-5 rounded-2xl font-bold text-base sm:text-lg hover:bg-emerald-900/50 transition-colors flex items-center gap-3"
                   >
                     <span

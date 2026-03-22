@@ -114,7 +114,7 @@ export default function App() {
                   اتصل الآن
                 </a>
                 <a
-                  href="https://wa.me/01018297040"
+                  href="https://wa.me/01289352555"
                   className="bg-white text-primary border border-outline-variant/30 px-8 py-4 sm:px-10 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:bg-surface-container-low transition-colors active:scale-95 flex items-center gap-3"
                 >
                   <span
@@ -301,12 +301,12 @@ export default function App() {
               {
                 icon: "database",
                 title: "قاعدة بيانات جاهزة",
-                desc: "تحتوي على آلاف الأصناف الطبية بأسعارها المحدثة باستمرار.",
+                desc: "تحتوي على آلاف الأصناف بأسعارها المحدثة باستمرار.",
               },
               {
                 icon: "search",
                 title: "البحث السريع",
-                desc: "ابحث بالاسم، الباركود، أو المادة الفعالة بلمح البصر.",
+                desc: "ابحث بالاسم، الباركود، أو بالكود بلمح البصر.",
               },
               {
                 icon: "notification_important",
@@ -321,7 +321,7 @@ export default function App() {
               {
                 icon: "group",
                 title: "إدارة الموظفين",
-                desc: "تحديد صلاحيات دقيقة لكل صيدلي أو مساعد لضمان الأمان.",
+                desc: "تحديد صلاحيات دقيقة لكل صيدلي أو مدير لضمان الأمان.",
               },
               {
                 icon: "analytics",
@@ -336,7 +336,7 @@ export default function App() {
               {
                 icon: "domain_add",
                 title: "إدارة فروع متعددة",
-                desc: "اربط صيدلياتك كلها في نظام واحد وتابعها من منزلك.",
+                desc: "اربط صيدلياتك أو محلاتك كلها في نظام واحد وتابعها من منزلك.",
               },
             ].map((item, i) => (
               <FadeInSection key={i} delay={i * 100} threshold={0.1}>
@@ -502,7 +502,7 @@ export default function App() {
                   </a>
 
                   <a
-                    href="https://wa.me/01018297040"
+                    href="https://wa.me/01289352555"
                     className="bg-emerald-900/30 backdrop-blur-md border border-white/30 text-white px-8 py-4 sm:px-10 sm:py-5 rounded-2xl font-bold text-base sm:text-lg hover:bg-emerald-900/50 transition-colors flex items-center gap-3"
                   >
                     <span

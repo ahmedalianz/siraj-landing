@@ -162,7 +162,7 @@ export default function App() {
                 className="rounded-[2rem] overflow-hidden shadow-2xl border border-white/60 aspect-video md:aspect-[4/3]"
                 dir="rtl"
               >
-                {heroImages.slice(0, 2).map((imgSrc, index) => (
+                {heroImages.map((imgSrc, index) => (
                   <SwiperSlide key={index}>
                     <img
                       src={imgSrc}

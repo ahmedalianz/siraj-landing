@@ -5,11 +5,15 @@ import logoImg from "./assets/logo.png";
 import heroImg1 from "./assets/1.jpeg";
 import heroImg2 from "./assets/2.jpeg";
 import heroImg3 from "./assets/3.jpeg";
+import heroImg4 from "./assets/4.png";
+import heroImg5 from "./assets/5.png";
+import heroImg6 from "./assets/6.png";
+import heroImg7 from "./assets/7.png";
 
 export default function App() {
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
 
-  const heroImages = [heroImg1, heroImg2, heroImg3];
+  const heroImages = [heroImg1, heroImg2, heroImg3, heroImg4, heroImg5, heroImg6, heroImg7];
 
   // Auto-rotate carousel
   useEffect(() => {
@@ -158,26 +162,7 @@ export default function App() {
               ))}
 
               {/* Floating stats card */}
-              <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 left-4 sm:left-6 bg-white/90 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/50 shadow-lg z-10">
-                <div className="flex items-center gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-emerald-100 flex items-center justify-center text-primary">
-                    <span
-                      className="material-symbols-outlined text-2xl sm:text-3xl"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      insights
-                    </span>
-                  </div>
-                  <div>
-                    <div className="text-xs text-on-surface-variant">
-                      إجمالي مبيعات اليوم
-                    </div>
-                    <div className="text-lg sm:text-xl font-black text-on-surface font-headline">
-                      12,450.50 جنيه
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
 
             {/* Carousel dots (only shown if >1 image) */}

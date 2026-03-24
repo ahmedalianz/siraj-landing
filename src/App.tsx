@@ -92,7 +92,7 @@ export default function App() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl  font-black leading-relaxed md:leading-loose tracking-wide md:tracking-wider">
                 ودّع الدفاتر وابدأ إدارة{" "}
                 <Typewriter
-                  words={["صيدليتك", "محلك", "مصنعك"]}
+                  words={["نشاطك", "صيدليتك", "محلك", "مصنعك"]}
                   typingSpeed={70}
                   deletingSpeed={40}
                   pauseDelay={3000}
@@ -101,7 +101,7 @@ export default function App() {
               </h1>
 
               <p className="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed">
-                نظام سراج يساعدك تدير المبيعات، المخزون، والأرباح بسهولة ومن
+                نظام سراج يساعدك تدير المبيعات، المخزون،العملاء والموردين والموظفين والأرباح بسهولة ومن
                 مكان واحد. واجهة عصرية ودقة متناهية.
               </p>
 
@@ -222,7 +222,7 @@ export default function App() {
               {
                 icon: "inventory_2",
                 title: "أخطاء في الجرد",
-                desc: "توقف عن فقدان الأدوية بسبب أخطاء الجرد اليدوي التقليدية.",
+                desc: "توقف عن فقدان الأصناف بسبب أخطاء الجرد اليدوي التقليدية.",
               },
               {
                 icon: "payments",
@@ -232,12 +232,12 @@ export default function App() {
               {
                 icon: "query_stats",
                 title: "صعوبة المتابعة",
-                desc: "هل تعرف أرباحك الصافية الحقيقية؟ سراج يوفر لك الإجابة الدقيقة.",
+                desc: "هل تعرف أرباحك الصافية الحقيقية؟ نظام سراج للمحاسبة يوفر لك الإجابة الدقيقة.",
               },
               {
                 icon: "schedule",
                 title: "ضياع الوقت",
-                desc: "البحث عن صنف أو تاريخ صلاحية لا يجب أن يأخذ أكثر من ثانية.",
+                desc: "البحث عن صنف أو رصيد عميل أو مورد أو تاريخ صلاحية لا يجب أن يأخذ أكثر من ثانية.",
               },
             ].map((item, i) => (
               <FadeInSection key={i} delay={i * 150} threshold={0.15}>
@@ -266,7 +266,7 @@ export default function App() {
           <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center relative z-10">
             <div className="inline-block w-16 h-1 bg-primary mb-8 rounded-full"></div>
             <h2 className="text-3xl sm:text-5xl font-black md:leading-relaxed md:tracking-relaxed mb-6 sm:mb-8">
-              نظام سراج هو الحل الذكي لإدارة الأنشطة التجارية بسهولة ودقة
+              نظام سراج للمحاسبة هو الحل الذكي لإدارة الأنشطة التجارية بسهولة ودقة
             </h2>
             <p className="text-lg text-on-surface-variant">
               تم تصميمه ليكون رفيقك في النجاح، يجمع بين البساطة في الاستخدام
@@ -311,32 +311,32 @@ export default function App() {
               {
                 icon: "notification_important",
                 title: "تنبيهات المخزون",
-                desc: "تنبيهات فورية للنواقص واقتراب انتهاء الصلاحية.",
+                desc: "تنبيهات فورية للنواقص تحت الحد الأدنى والمنتهية واقتراب انتهاء الصلاحية.",
               },
               {
                 icon: "account_balance_wallet",
-                title: "البيع النقدي والآجل",
+                title: "البيع النقدي والآجل جملة أو قطاعي",
                 desc: "إدارة كاملة لحسابات العملاء والديون والمدفوعات.",
               },
               {
                 icon: "group",
                 title: "إدارة الموظفين",
-                desc: "تحديد صلاحيات دقيقة لكل صيدلي أو مدير لضمان الأمان.",
+                desc: "تحديد صلاحيات دقيقة لكل موظف أو مدير لضمان الأمان.",
               },
               {
                 icon: "analytics",
                 title: "تقارير مفصلة",
-                desc: "تقارير يومية، أسبوعية وشهرية للأرباح والمصاريف.",
+                desc: "تقارير يومية، أسبوعية وشهرية للأرباح والمصاريف والمخزون.",
               },
               {
                 icon: "barcode_scanner",
-                title: "دعم الباركود بالكامل",
+                title: "دعم جميع أنظمة الباركود بالكامل",
                 desc: "توافق تام مع جميع أجهزة الباركود وطابعات الفواتير.",
               },
               {
                 icon: "domain_add",
                 title: "إدارة فروع متعددة",
-                desc: "اربط صيدلياتك أو محلاتك كلها في نظام واحد وتابعها من منزلك.",
+                desc: "اربط مصانعك أو محلاتك كلها في نظام واحد وتابعها من منزلك.",
               },
             ].map((item, i) => (
               <FadeInSection key={i} delay={i * 100} threshold={0.1}>
@@ -429,9 +429,29 @@ export default function App() {
                   text: "نظام سراج نقل مصنعي لمستوى تاني تماماً. الحسابات بقت أسهل بكتير والجرد مابقاش بياخد وقت خالص. الدعم الفني محترم جداً.",
                 },
                 {
-                  name: "د. سارة محمود",
-                  pharmacy: "صيدلية النخبة - الإسكندرية",
-                  text: "أفضل حاجة في البرنامج سهولة البحث عن الأدوية والمواد الفعالة. ساعدني جداً في إدارة النواقص وتنبيهات الصلاحية.",
+                  name: "د. محمد فريد ",
+                  pharmacy: "تاج للمنظفات - السنطة",
+                  text: "أفضل حاجة في البرنامج سهولة البحث عن الأصناف ودمج الباركود والوحدات. ساعدني جداً في إدارة النواقص .",
+                },
+                {
+                  name: "أ/أحمد رشاد ",
+                  pharmacy: "رؤية للبصريات",
+                  text: "كنت استهلك الوقت والجهد في البحث عن الكشف والمقاسات السابقة للعميل ساعدني نظام سراج في المقارنة بينهم بسهولة .",
+                },
+                {
+                  name: "أ/محمد المتولي ",
+                  pharmacy: "مول مكتبة البلد",
+                  text: "نظام سراج للمحاسبة سهل عليا كتير في شاشة البيع وقدرت احدد الكتب لكل ترم واختيارها في لحظات  .",
+                },
+                {
+                  name: "أ/ شادي جمال العكل ",
+                  pharmacy: "محلات أنجال الحاج جمال - المنشأة الكبرى",
+                  text: "مع نظام سراج قدرت اضيف كل وحدات الأصناف اللي عندي مهما كان عددها وانشاء باركود خاص بها من خلال البرنامج .",
+                },
+                                {
+                  name: "أ. محمد القصاص ",
+                  pharmacy: "مصنع القصاص للكيماويات والمنظفات - زفتى",
+                  text: "كنت بتعب في تجميع وحصر الفوارغ لكن البرنامج ده بيعرفني رصيدها عند العميل في لحظة .",
                 },
               ].map((t, i) => (
                 <div
@@ -489,7 +509,7 @@ export default function App() {
                 </h2>
                 <p className="text-lg sm:text-xl opacity-90 mb-10 sm:mb-12 max-w-2xl mx-auto">
                   انضم لمئات الأنشطة التجارية والصناعية الناجحة التي تعتمد على
-                  سراج يومياً. اطلب عرض سعر مجاني اليوم.
+                  نظام سراج للمحاسبة يومياً. اطلب عرض سعر اليوم.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
@@ -526,7 +546,7 @@ export default function App() {
         <div className="flex flex-col md:flex-row-reverse justify-between items-center w-full px-6 sm:px-8 py-10 sm:py-12 max-w-7xl mx-auto gap-6">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold text-emerald-800">
-              نظام سراج للمحاسبة
+              تصميم وبرمجة محمد السيسي
             </span>
           </div>
 
@@ -561,7 +581,7 @@ export default function App() {
 
       <div className="fixed bottom-6 left-6 flex flex-col gap-4 md:hidden z-50">
         <a
-          href="https://wa.me/01018297040"
+          href="https://wa.me/01102876777"
           className="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg active:scale-95 transition-all"
         >
           <span

@@ -2,7 +2,7 @@ import { useState, type ReactNode } from "react";
 import { useInViewFade } from "./hooks/useInViewFade";
 import Typewriter from "./Typewriter";
 import logoImg from "./assets/logo.png";
-import heroImg1 from "./assets/1.jpeg";
+import heroImg1 from "./assets/serag.png";
 import heroImg2 from "./assets/2.jpeg";
 import heroImg3 from "./assets/3.jpeg";
 import heroImg4 from "./assets/4.png";

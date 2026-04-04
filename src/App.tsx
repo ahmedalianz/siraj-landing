@@ -4,7 +4,7 @@ import Typewriter from "./Typewriter";
 import logoImg from "./assets/logo.png";
 import heroImg1 from "./assets/serag.png";
 import heroImg2 from "./assets/2.jpeg";
-import heroImg3 from "./assets/3.jpeg";
+import heroImg3 from "./assets/8.png";
 import heroImg4 from "./assets/4.png";
 import heroImg5 from "./assets/5.png";
 import heroImg6 from "./assets/6.png";
